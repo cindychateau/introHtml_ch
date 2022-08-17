@@ -5,26 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introducción a HTML</title> <!-- cambia el titulo en pestaña -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
-    <h1>Título Principal</h1>
+    <h1 id="h1_id" class="h1_class azul">Título Principal</h1>
     <h2>H2</h2>
-    <h3>H3</h3>
+    <h3 class="azul">H3</h3>
     <h4>H4</h4>
     <h5>H5</h5>
     <h6>H6</h6>
 
-    <p>Párrafo - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui voluptas mollitia quibusdam cupiditate voluptates enim eos perferendis reprehenderit eius libero repudiandae officiis assumenda facere dolore nostrum, rerum tempora? Laboriosam, exercitationem. </p>
+    <p class="azul">Párrafo - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui voluptas mollitia quibusdam cupiditate voluptates enim eos perferendis reprehenderit eius libero repudiandae officiis assumenda facere dolore nostrum, rerum tempora? Laboriosam, exercitationem. </p>
 
     <a href="http://google.com" >Enlace</a> <!-- href="la pagina a la que vamos a redirigir al usuario"; dentro de la etiqueta a podemos tener más etiquetas -->
 
 
-    <p>
+    <p class="parrafo">
         Etiqueta <strong>strong</strong> y etiqueta <em>énfasis</em>
     </p>
 
-    <h2>Lista desordenada</h2>
+    <div class="contenedor">
+        <h4>H4 dentro de contenedor</h4>
+        <div>
+            <h4>H4 dentro de div, que está dentro de contenedor</h4>
+        </div>
+    </div>
+
+
+    <h2 class="azul">Lista desordenada</h2>
+    <h2 id="l2" class="azul">Lista desordenada 2</h2>
     <ul>
         <li>Frutas</li>
         <li>Verduras</li>
@@ -60,7 +70,9 @@
         </tbody>
     </table>
 
-    <img src="images/gatito.jpg" alt="Imagen de Gatito">
+    <img class="img_gato" src="images/gatito.jpg" alt="Imagen de Gatito">
+
+    <img src="images/gatito_small.jpg" alt="Imagen de gatito 2">
     
 
     <!--ETIQUETA más importante-->
@@ -76,7 +88,7 @@
         </div>
         <div>
             <label for="input_numeral">Número</label>
-            <input type="number" name="input_numeral" id="input_numeral">
+            <input type="number" name="input_numeral" id="input_numeral" min="1" max="5">
         </div>
         <div>
             <label for="input_contra">Contraseña</label>
@@ -102,8 +114,8 @@
         </div>
         <div>
             <select name="comida_preferida">
-                <option>Lasaña</option>
-                <option>Carne asada</option>
+                <option value="1">Lasaña</option>
+                <option value="2">Carne asada</option>
                 <option>Pollo</option>
                 <option>Pastel</option>
                 <option>Spagetti</option>
@@ -112,9 +124,27 @@
         <div>
             <input type="submit" value="Ingresar Info"> <!-- Crea un botón -->
         </div>
+        <span>TEXTO</span>
 
     </form>
-    <header>
+    <h3 class="color">Esta es una propiedad de color</h3>
+
+    <p class="texto">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem incidunt nostrum quam voluptates praesentium qui natus. Earum consequatur eos incidunt cupiditate, distinctio, inventore quisquam nulla, impedit vero exercitationem temporibus. Impedit.
+    </p>
+
+    <div class="tamano">
+
+    </div>
+    <div class="background">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, veritatis sunt id magni est recusandae nemo? Nam nihil placeat nostrum. Dolores vel cupiditate veritatis quo, est animi hic quidem expedita!</p>
+    </div>
+
+    <div id="box_model">
+        Texto de prueba
+    </div>
+
+    <!--header>
 
     </header>
     <section>
@@ -122,7 +152,7 @@
     </section>
     <footer>
 
-    </footer>
+    </footer-->
 
 </body>
 </html>
