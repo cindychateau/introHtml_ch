@@ -106,3 +106,58 @@ input, textarea { /* Selecciona los input Y los textareas */
     border: 2px solid black;
     padding: 25px;
 }
+
+.h2_inline {
+    display: inline; /*Me despliega los elementos en una sola línea*/
+}
+
+.block {
+    display: block; /*Me desplegar mis elementos como bloque es decir que comienzan del principio de la página hasta el ancho total de mi página*/
+}
+
+.flag {
+    width: 150px;
+    height: 250px;
+    display: inline-block;
+}
+
+.black {
+    background-color: black;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+.div1 {
+    width: 250px;
+    height: 150px;
+    border: 1px solid black;
+    background-color: purple;
+    display: inline-block;
+}
+
+.div2 {
+    width: 250px;
+    height: 300px;
+    border: 1px solid black;
+    background-color: green;
+    display: inline-block;
+}
+
+.div3 {
+    width: 250px;
+    height: 80px;
+    border: 1px solid black;
+    background-color: orangered;
+    display: inline-block;
+}
+
+.vertical_align {
+    vertical-align: top; /*top, bottom, middle*/
+}
+
